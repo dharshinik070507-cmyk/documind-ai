@@ -1,0 +1,14 @@
+backend/.env
+frontend/.env
+frontend/.env.production
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/routes/__pycache__/
+backend/app/services/__pycache__/
+backend/app/utils/__pycache__/
+.vscode/
+frontend/node_modules/
+frontend/dist/
+backend/uploads/
+backend/outputs/
+backend/extracted_images/
