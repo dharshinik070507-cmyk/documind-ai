@@ -1,8 +1,8 @@
-console.log("API BASE URL:", API_BASE_URL);
 import axios from "axios";
 
-const API_BASE_URL =
-  (import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
+const API_BASE_URL = "https://documind-ai-backend-becu.onrender.com";
+
+console.log("API BASE URL:", API_BASE_URL);
 
 const API = axios.create({
   baseURL: API_BASE_URL,
@@ -54,5 +54,3 @@ export function getImageUrl(imageName) {
   const safeImageName = encodeURIComponent((imageName || "").trim());
   return `${API_BASE_URL}/extract/image/${safeImageName}`;
 }
-
-export { API_BASE_URL };
